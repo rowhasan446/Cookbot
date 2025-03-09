@@ -4,11 +4,13 @@ import asyncio
 import warnings
 import streamlit as st
 from pypdf import PdfReader
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.llms import HuggingFaceEndpoint
+
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
-from langchain_huggingface import HuggingFaceEndpoint
+
 from langchain.memory import ConversationBufferMemory
 
 def set_background():
