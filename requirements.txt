@@ -8,3 +8,9 @@ python-dotenv
 langchain_openapi
 langchain_experimental
 -e .
+streamlit
+
+langchain_huggingface
+huggingface_hub
+torch
+transformers
